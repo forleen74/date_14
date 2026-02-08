@@ -223,7 +223,7 @@ button:hover {
     position: absolute;
     width: 600px;
     height: 500px;
-    transform: translate(-31%, 25%);
+    transform: translate(-100%, 25%);
     display: block;
     /* margin: 0 auto; /* Центрирование по горизонтали */ */
 }
@@ -231,7 +231,7 @@ button:hover {
 
 /* Стили для точек на карте */
 .point {
-    position: absolute;
+    position: relative;
     width: 15px;
     height: 15px;
     background-color: rgb(235, 126, 193);  /* Цвет точки */
@@ -494,6 +494,7 @@ button:hover {
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
