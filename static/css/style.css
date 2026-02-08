@@ -441,11 +441,13 @@ button:hover {
 
 /* Стили для картинок */
 #main-image {
+    position: relative;
     max-width: 80%; /* Ограничиваем ширину */
     margin: 20px 0;
 }
 
 #download-image {
+    position: relative;
     border: 2px solid #f16b86; /* Добавим обводку для картинки */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
@@ -463,7 +465,7 @@ button:hover {
 /* Контейнер для сердечек */
 #hearts-container {
     position: absolute;
-    top: 6250px; /* Сдвигаем контейнер на 600px вниз */
+    top: 625px; /* Сдвигаем контейнер на 600px вниз */
     left: 0;
     width: 100%;
     height: 100%;
@@ -489,6 +491,7 @@ button:hover {
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
