@@ -484,14 +484,15 @@ button:hover {
 /* Анимация падения сердечек */
 @keyframes fall {
     0% {
-        transform: translateY(-50px); /* Начало чуть выше верхней части секции */
+        transform: translateY(0px); /* Начало чуть выше верхней части секции */
         opacity: 1;
     }
     100% {
-        transform: translateY(100%); /* Падаем до низа секции */
+        transform: translateY(100vh); /* Падаем до низа секции */
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
