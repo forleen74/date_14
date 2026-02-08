@@ -212,7 +212,7 @@ button:hover {
 
 /* Стили для карты */
 .map-container {
-    position: relative;
+    position: absolute;
     width: 60%;
     height: 400px; /* Устанавливаем высоту для карты */
     margin: 20px auto;
@@ -223,7 +223,7 @@ button:hover {
     position: absolute;
     width: 600px;
     height: 500px;
-    transform: translate(31%, 25%);
+    transform: translate(-31%, 25%);
     display: block;
     /* margin: 0 auto; /* Центрирование по горизонтали */ */
 }
@@ -493,6 +493,7 @@ button:hover {
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
