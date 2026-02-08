@@ -1,0 +1,480 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной фон и шрифты */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8c2c8; /* Нежно-розовый фон */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    cursor: url('css/heart.png'), auto;
+}
+
+/* Заголовки */
+h1 {
+    color: #d08ea7; /* Пастельный розовый для заголовков */
+    font-size: 2em;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+/* Стили для параграфов */
+p {
+    font-size: 1.2em;
+    color: #6d4f62; /* Мягкий серый цвет для текста */
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Стили для кнопки */
+button {
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #f16b86; /* Нежно-розовый для кнопок */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #eb4667; /* Более темный розовый при наведении */
+}
+
+/* Стили для кнопки внутри секции #section-3 */
+#section-3 button {
+    display: block;        /* Сделаем кнопку блочным элементом */
+    margin-left: auto;     /* Выравниваем кнопку вправо */
+    margin-right: 30px;       /* Убираем отступ справа */
+    padding: 15px;
+    background-color: #f16b86;  /* Нежно-розовый для кнопок */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#section-3 button:hover {
+    background-color: #eb4667;  /* Более темный розовый при наведении */
+}
+
+/* Стили для секций (глав) */
+.section {
+    display: none; /* Скрыто до нажатия */
+    padding: 50px;
+    margin: 30px auto;  /* Центрируем по горизонтали и добавляем отступ снизу */
+    background-color: #fde2e5; /* Светло-розовый фон для секций */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out;
+    min-height: 90vh; /* Минимальная высота для секции — 90% высоты экрана */
+    width: 90%; /* Устанавливаем ширину секции */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирование контента по вертикали */
+    align-items: center; /* Центрирование контента по горизонтали */
+}
+
+/* Отступ сверху только для отображаемых секций */
+.section.visible {
+    margin-top: 50px; /* Добавляем отступ сверху для видимости главного фона */
+}
+
+.full-screen {
+    min-height: 90vh; /* Блок, занимающий 90% высоты экрана */
+    width: 90%; /* Ширина секции на 80% от экрана */
+}
+
+.section p {
+    font-size: 1.5em;
+    color: #6d4f62; /* Мягкий серый цвет для текста */
+    text-align: center;
+}
+
+/* Стили для картинки в блоках */
+.section-image {
+    width: 60%;  /* Устанавливаем картинку на 60% ширины родительского контейнера */
+    height: auto; /* Сохраняем пропорции картинки */
+    max-width: 100%; /* Убираем ограничение на максимальную ширину */
+    margin: 150px 0;
+    border-radius: 10px;
+}
+
+/* Убедитесь, что родительский элемент имеет position: relative */
+/* Убедитесь, что родительский элемент имеет position: relative */
+.image-slider {
+    position: relative; /* Создает контекст для позиционирования кнопок */
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    overflow: hidden;
+    width: 800px;
+    height: 500px;
+}
+
+/* Стили для слайдера картинок */
+.image-slider {
+    display: flex; /* Располагаем картинки в ряд */
+    justify-content: center; /* Центрируем картинки */
+    margin: 20px 0;
+    overflow: hidden; /* Скрываем картинки, которые выходят за пределы контейнера */
+    width: auto; /* Ограничиваем ширину контейнера */
+    height: 500px; /* Фиксированная высота слайдера */
+    position: relative; /* Для того чтобы кнопки были позиционированы относительно контейнера */
+}
+
+/* Стили для кнопок переключения картинок */
+#prev-image, #next-image {
+    position: absolute;  /* Позиционируем кнопки поверх картинок */
+    top: 50%; /* Центрируем кнопки по вертикали */
+    padding: 10px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    transform: translateY(11000%); /* Центрируем кнопки по вертикали */
+    width: 70px;  /* Задаем фиксированную ширину для кнопок */
+}
+
+#prev-image {
+    left: 150px; /* Кнопка "Назад" слева */
+}
+
+#next-image {
+    right: 150px; /* Кнопка "Вперед" справа */
+}
+
+/* Стили для кнопки переключения при наведении */
+#prev-image:hover, #next-image:hover {
+    background-color: rgba(175, 36, 36, 0.8);
+}
+
+/* Стили для изображений */
+.slider-image {
+    display: none; /* Изображения скрыты по умолчанию */
+    width: 100%;  /* Чтобы картинки занимали всю ширину контейнера */
+    height: auto; /* Сохраняем пропорции изображений */
+}
+
+
+/* Стили для списка с планом */
+.plan-list {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding: 0;
+}
+
+.plan-list li {
+    font-size: 1.2em;
+    color: #6d4f62; /* Мягкий серо-розовый */
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Стили для ссылки */
+.event-link {
+    color: #f27c94; /* Цвет ссылки (розовый оттенок) */
+    text-decoration: none;
+}
+
+.event-link:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+
+/* Стили для карты */
+.map-container {
+    position: relative;
+    width: 60%;
+    height: 400px; /* Устанавливаем высоту для карты */
+    margin: 20px auto;
+    background-color: #fde2e5;
+}
+
+.map-image {
+    position: relative;
+    width: 700px;
+    height: 600px;
+    display: block;
+    margin: 0 auto; /* Центрирование по горизонтали */
+}
+
+
+/* Стили для точек на карте */
+.point {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(235, 126, 193);  /* Цвет точки */
+    border-radius: 50%;
+    border: 2px solid rgb(240, 55, 169); /* Черный контур */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+/* Для точки Grand Cru задаем кастомный цвет */
+.grand-cru {
+    background-color: #fd7200;  /* Золотой цвет для точки Grand Cru */
+    border: 2px solid #ff0000;  /* Черный контур для выделенной точки */
+}
+
+.point:hover {
+    transform: scale(1.5); /* Увеличиваем точку при наведении */
+}
+
+/* Стили для всплывающего текста */
+.point::after {
+    content: attr(data-info);  /* Берем текст из атрибута data-info */
+    position: absolute;
+    top: -40px;
+    left: 100%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    font-size: 0.8em;  /* Уменьшаем размер шрифта */
+    width: 150px;  /* Ограничиваем ширину до 150px */
+    max-height: 300px;  /* Устанавливаем максимальную высоту */
+    text-align: left;  /* Выравнивание текста по центру */
+    overflow: auto;  /* Позволяем прокрутку, если текст выходит за пределы */
+    word-wrap: break-word;  /* Перенос слов по необходимости */
+    word-break: break-word;  /* Убедимся, что длинные слова тоже переносятся */
+    z-index: 10;
+}
+
+.point:hover::after {
+    display: block;  /* Показываем текст при наведении */
+}
+
+/* Стили для секции с картой */
+#section-3 {
+    padding: 1px 2px; /* Уменьшаем отступы внутри секции */
+    margin: 2px auto;  /* Уменьшаем отступы сверху и снизу для секции */
+    background-color: #fde2e5;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 0;  /* Убираем верхний отступ */
+}
+
+/* Стили для текста в секции */
+#section-3 p {
+    font-size: 1.2em;
+    color: #6d4f62;
+    text-align: center;
+    margin: 1px 0;  /* Уменьшаем отступы сверху и снизу для текста */
+}
+
+/* Стили для блока с признанием */
+#love-declaration {
+    position: absolute;  /* Абсолютное позиционирование */
+    top: calc(50% + 3200px);  /* Смещаем блок на 100px вниз относительно центра */
+    left: 50%;           /* Позиционируем текст по горизонтали */
+    transform: translateX(-50%); /* Центрируем блок по горизонтали */
+    background-color: #fdd1d6;  /* Полупрозрачный фон */
+    color: rgb(37, 37, 37);        /* Белый цвет текста */
+    padding: 20px;
+    width: 80%;          /* Ширина блока */
+    max-width: 1400px;    /* Максимальная ширина */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Тень для блока */
+    z-index: 10;         /* Устанавливаем высокий z-index, чтобы блок был поверх */
+    display: none;       /* Скрыть по умолчанию */
+    text-align: left;  /* Выравнивание текста по центру */
+    font-size: 0.8em;    /* Размер шрифта */
+    
+}
+
+/* Стили для параграфов внутри блока признания */
+#love-declaration p {
+    text-align: left;  /* Убеждаемся, что параграфы выровнены по левому краю */
+    margin: 10px 0;     /* Добавляем отступы между параграфами */
+}
+
+/* Стили для кнопки открытия признания */
+#btn-open-love-declaration {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffb3bc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-open-love-declaration:hover {
+    background-color: #ffa5b0;
+}
+
+/* Стили для кнопки закрытия признания */
+#btn-close-love-declaration {
+    background-color: #fcc4ca; /* Цвет кнопки закрытия */
+    padding: 10px 15px;
+    color: white;
+    width: 700px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#btn-close-love-declaration:hover {
+    background-color: #f37481;
+}
+
+/* Стили для слайдера видео */
+.video-slider {
+    display: flex; /* Располагаем видео в ряд */
+    justify-content: center; /* Центрируем видео */
+    margin: 20px 0;
+    overflow: hidden; /* Скрываем видео, выходящее за пределы контейнера */
+    width: 800px; /* Ограничиваем ширину контейнера */
+    height: 450px; /* Устанавливаем фиксированную высоту */
+    position: relative; /* Создаем контекст для позиционирования кнопок */
+}
+
+/* Стили для видео */
+.slider-video {
+    display: none;  /* По умолчанию скрыты */
+    width: 100%;  /* Ширина видео подстраивается под контейнер */
+    height: auto; /* Высота будет зависеть от соотношения сторон видео */
+}
+
+/* Стили для кнопок переключения видео */
+.slider-nav {
+    position: absolute; /* Позиционируем кнопки поверх видео */
+    top: 50%; /* Выравниваем кнопки по вертикали */
+    padding: 10px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(9000%); /* Центрируем кнопки по вертикали */
+    width: 70px;  /* Задаем фиксированную ширину для кнопок */
+}
+
+#prev-video {
+    left: 150px; /* Кнопка "Назад" слева */
+}
+
+#next-video {
+    right: 150px; /* Кнопка "Вперед" справа */
+}
+
+.slider-nav:hover {
+    background-color: rgba(175, 36, 36, 0.8);
+}
+
+/* Стили для новых кнопок */
+.special-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f16b86;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.special-btn:hover {
+    background-color: #eb4667;
+}
+
+/* Для кнопки "Убегающая кнопка" */
+#btn-move {
+    position: relative;
+    transition: left 1s;
+}
+
+/* Для кнопки "Качающаяся кнопка" */
+#btn-shake {
+    position: relative;
+    transition: transform 0.2s;
+}
+
+#btn-shake.shake {
+    transform: translateX(2000px);
+}
+
+
+/* Стили для картинок */
+#main-image {
+    max-width: 80%; /* Ограничиваем ширину */
+    margin: 20px 0;
+}
+
+#download-image {
+    border: 2px solid #f16b86; /* Добавим обводку для картинки */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#download-image:hover {
+    transform: scale(1.1); /* Немного увеличиваем картинку при наведении */
+}
+
+
+/* Контейнер для сердечек */
+#hearts-container {
+    position: absolute;
+    top: 6250px; /* Сдвигаем контейнер на 600px вниз */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Сердечки не блокируют клики */
+    overflow: hidden; /* Сердечки не выходят за пределы */
+    z-index: 100; /* Убедитесь, что контейнер для сердечек находится поверх других элементов */
+}
+/* Стили для каждого сердечка */
+.heart {
+    position: absolute;
+    font-size: 30px; /* Размер сердечка */
+    animation: fall 3s ease-in forwards; /* Анимация падения */
+}
+
+/* Анимация падения сердечек */
+@keyframes fall {
+    0% {
+        transform: translateY(-50px); /* Начало чуть выше экрана */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh); /* Падаем до низа экрана */
+        opacity: 0; /* Сердечко исчезает */
+    }
+}
