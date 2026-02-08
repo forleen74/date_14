@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приглашение &#128140;</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="static/css/style.css"> <!-- Путь изменен -->
 </head>
 <body>
     <!-- Приветственное сообщение -->
@@ -39,7 +39,7 @@
         И я ни на что не намекаю - я прямо говорю, что после шоу мы сможем покушать в "Grand Cru" на патриках <a href="https://grandcru.ru/novoe-menyu-v-grand-cru/" target="_blank" class="event-link"> (я знаю, как ты любишь меню на сайтах) </a> </p>
         <!-- Контейнер для карты -->
         <div class="map-container">
-            <img src="{{ url_for('static', filename='images/map.jpg') }}" alt="Карта" class="map-image">
+            <img src="static/images/map.jpg" alt="Карта" class="map-image"> <!-- Путь изменен -->
             
             <!-- Точки на карте -->
             <div class="point" style="top: 55%; left: 55%;" data-info="Twins Garden"></div>
@@ -64,17 +64,8 @@
 
         <!-- Блок с признанием в любви, скрыт по умолчанию -->
         <div id="love-declaration" class="hidden" style="text-align: left;" >
-            <p>     Вероника, милая, я безумно по тебе скучаю. Невозможно уместить в голове то, что еще несколько недель назад мы были вместе, а теперь не общаемся.
-            Мне так же тяжело, как и тебе - ощущать оторванной большую часть себя. Каждое утро начинается с мысли "как же паршиво" - и эта мысль не покидает весь день:
-            в работе, в хобби, неважно. Я живу только мыслью, что мы еще можем всё спасти. И просыпаюсь только ради того, чтобы что-то сделать для этого.
-            Я вижу тебя во сне без преувеличения каждую ночь, а количество раз за день, когда я мысленно произношу твое имя или представляю твой образ - переваливает за десятки тысяч. Я ежесекундно думаю о тебе.
-            Вероника, ты для меня самый драгоценный человек. Самое важное в жизни - это близкие люди рядом. С кем-то мы рождаемся в семье, а кого-то находим. Если бы мы с тобой не
-            встретились в школе - я бы искал тебя всю свою жизнь, и, если бы не нашел - она была бы прожита впустую.  <br>
-            Я очень сильно и очень искренне тебя люблю - до такой степени, что люблю не просто твой голос, а люблю твои легкие, твои голосовые связки - потому что благодаря им этот мир имеет удовольствие тебя услышать.
-            Сам факт ощущения твоего присутсвия рядом ощущается как огромное благословение, и я готов сколько угодно говорить, сколько угодно стараться и что угодно делать, лишь бы в итоге мы оказались вместе.
-            Не думай, пожалуйста, что я тебя не ценю, или что мое внимание к тебе может угаснуть - это совсем не так. Я целиком и полностью осознаю свои ошибки и я ни за что в жизни больше не поступлю таким образом, чтобы ранить или обидеть тебя. 
-            Я всегда старался для нас двоих и для нашего будущего - но я понял, как важно в то же время фокусироваться на настоящем. Милая, позволь мне пожалуйста окружить тебя любовью, заботой и показать, как сильно ты мне нужна.
-            Вместе у нас может получиться все, что мы захотим - я искренне в это верю.
+            <p>Вероника, милая, я безумно по тебе скучаю. Невозможно уместить в голове то, что еще несколько недель назад мы были вместе, а теперь не общаемся.
+            Мне так же тяжело, как и тебе - ощущать оторванной большую часть себя. Каждое утро начинается с мысли "как же паршиво" - и эта мысль не покидает весь день...
             </p>
 
             <!-- Кнопка закрытия блока -->
@@ -88,31 +79,18 @@
     <!-- Новая секция с видео -->
     <div id="section-5-video" class="section">
         <p><strong>Видео, чтобы отвлечься и отдохнуть</strong></p>
-        <p>(cтавь на паузу перед переходами на следующее) <p>
+        <p>(ставь на паузу перед переходами на следующее)</p>
         <div class="video-slider">
             <video class="slider-video" controls>
-                <source src="{{ url_for('static', filename='videos/lobanov.mp4') }}" type="video/mp4">
+                <source src="static/videos/lobanov.mp4" type="video/mp4"> <!-- Путь изменен -->
                 Ваш браузер не поддерживает видео.
             </video>
             <video class="slider-video" controls>
-                <source src="{{ url_for('static', filename='videos/diary.mp4') }}" type="video/mp4">
+                <source src="static/videos/diary.mp4" type="video/mp4"> <!-- Путь изменен -->
                 Ваш браузер не поддерживает видео.
             </video>
             <video class="slider-video" controls>
-                <source src="{{ url_for('static', filename='videos/pride_and.mp4') }}" type="video/mp4">
-                Ваш браузер не поддерживает видео.
-            </video>
-            <video class="slider-video" controls>
-                <source src="{{ url_for('static', filename='videos/zveropolis.mp4') }}" type="video/mp4">
-                Ваш браузер не поддерживает видео.
-            </video>
-                <video class="slider-video" controls>
-                <source src="{{ url_for('static', filename='videos/lord.mp4') }}" type="video/mp4">
-                Ваш браузер не поддерживает видео.
-            </video>
-
-            <video class="slider-video" controls>
-                <source src="{{ url_for('static', filename='videos/elemental.mp4') }}" type="video/mp4">
+                <source src="static/videos/pride_and.mp4" type="video/mp4"> <!-- Путь изменен -->
                 Ваш браузер не поддерживает видео.
             </video>
         </div>
@@ -125,43 +103,17 @@
     <div id="section-6-images" class="section">
         <p><strong>Картинки для настроения</strong></p>
         <div class="image-slider">
-            <img src="{{ url_for('static', filename='images/IMG_1.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/IMG_2.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image555.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image4.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image5.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image6.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image7.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image8.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image9.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image11.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image222.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image22.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image33.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image44.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image55.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image66.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image77.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image99.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image111.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image444.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image666.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image777.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image888.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image999.jpg') }}" alt="Картинка" class="slider-image">
-            <img src="{{ url_for('static', filename='images/image333.jpg') }}" alt="Картинка" class="slider-image">
+            <img src="static/images/IMG_1.jpg" alt="Картинка" class="slider-image"> <!-- Путь изменен -->
+            <img src="static/images/IMG_2.jpg" alt="Картинка" class="slider-image"> <!-- Путь изменен -->
+            <img src="static/images/image555.jpg" alt="Картинка" class="slider-image"> <!-- Путь изменен -->
         </div>
         <button class="slider-nav" id="prev-image">←</button>
         <button class="slider-nav" id="next-image">→</button>
         <button id="btn-next-6">:)</button>
     </div>
-    
+
     <div id="section-7" class="section">
         <p>Ну что, как тебе идея для ближайшей субботы?</p>
-        <!-- <p> Все кнопки кликабельны, но.. </p> -->
         <button id="btn-next-7">Хорошо, давай попробуем</button>
         <div id="hearts-container"></div>
         <button id="btn-fade" style="position: absolute; top: 6300px; left: 50%; transform: translateX(-250%);" class="special-btn">Даже не знаю</button>
@@ -171,24 +123,15 @@
         <button id="btn-move3" style="position: absolute; top: 6450px; left: 55%; transform: translateX(250%);" class="special-btn">Ты дурак??</button>
         <button id="btn-move4" style="position: absolute; top: 6850px; left: 45%; transform: translateX(250%);" class="special-btn">Не хочу.., но хотела бы, но...</button>
         <button id="btn-move5" style="position: absolute; top: 6950px; left: -18%; transform: translateX(250%);" class="special-btn">Ну вот что мне с тобой делать!</button>
-        <!-- <button id="btn-move2" style="position: absolute; top: 6750px; left: -10%; transform: translateX(250%);" class="special-btn"> Во мне много сомнений...</button> -->
-        <!-- <button id="btn-shake" style="position: absolute; top: 6250px; left: -30%; transform: translateX(-150%);" class="special-btn">Качающаяся кнопка</button> -->
 
         <div id="image-container" style="display: none; text-align: center; position: absolute; top: 6800px; left: 22%;">
-        <img src="{{ url_for('static', filename='images/txttxt.jpg') }}" alt="Картинка" style="max-width: 50%; height: auto;">
+        <img src="static/images/txttxt.jpg" alt="Картинка" style="max-width: 50%; height: auto;"> <!-- Путь изменен -->
         <br>
-        <!-- Картинка для скачивания -->
         <a id="download-link" href="" download>
-            <img src="{{ url_for('static', filename='images/kitty.jpg') }}" alt="Картинка" 
+            <img src="static/images/kitty.jpg" alt="Картинка" <!-- Путь изменен -->
             style="max-width: 10%; height: auto; position: absolute; top: 100px; left: 50%; transform: translate(300px, -120px);">
         </a>
         </div>
-
-        <!-- Новые кнопки с разной механикой -->
-        <!-- <button id="btn-fade" style="position: relative; top: 100px; left: 50%; transform: translateX(-50%);" class="special-btn">Пропадающая кнопка</button>
-        <button id="btn-move" style="position: relative; top: -100px; left: -10%; transform: translateX(-50%);" class="special-btn">Убегающая кнопка</button>
-        <button id="btn-shake" style="position: relative; top: 10px; left: 10%; transform: translateX(-50%);" class="special-btn">Качающаяся кнопка</button> -->
-    </div>
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -429,3 +372,4 @@
  
 </body>
 </html>
+
