@@ -447,7 +447,7 @@ button:hover {
 }
 
 #download-image {
-    position: relative;
+    position: absolute;
     border: 2px solid #f16b86; /* Добавим обводку для картинки */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
@@ -491,6 +491,7 @@ button:hover {
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
