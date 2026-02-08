@@ -223,7 +223,7 @@ button:hover {
     position: absolute;
     width: 600px;
     height: 500px;
-    transform: translate(-20%, -15%);
+    transform: translate(-20%, 20%);
     display: block;
     /* margin: 0 auto; /* Центрирование по горизонтали */ */
 }
@@ -494,6 +494,7 @@ button:hover {
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
