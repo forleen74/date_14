@@ -216,7 +216,7 @@ button:hover {
     width: 60%;
     height: 400px; /* Устанавливаем высоту для карты */
     margin: 20px auto;
-    background-color: #fde2e5;
+    rgba(253, 226, 229, 0.0);
 }
 
 .map-image {
@@ -493,6 +493,7 @@ button:hover {
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
