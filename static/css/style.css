@@ -220,9 +220,10 @@ button:hover {
 }
 
 .map-image {
-    position: relative;
+    position: absolute;
     width: 700px;
     height: 600px;
+    transform: translateX(23%);
     display: block;
     margin: 0 auto; /* Центрирование по горизонтали */
 }
@@ -492,6 +493,7 @@ button:hover {
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
