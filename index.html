@@ -37,20 +37,20 @@
         <p><strong>Ну конечно будет! На момент 15:00 мы уже целых 4 часа не дома. Пора обедать!</strong> <br>
         Ты знала, что в Москве на сегодня 9 ресторанов, отмеченных звездой мишлен? (можешь навестись на кружочки) <br>
         И я ни на что не намекаю - я прямо говорю, что после шоу мы сможем покушать в "Grand Cru" на патриках <a href="https://grandcru.ru/novoe-menyu-v-grand-cru/" target="_blank" class="event-link"> (я знаю, как ты любишь меню на сайтах) </a> </p>
-        <!-- Контейнер для карты -->
-        <div class="map-container">
-            <img src="static/images/map.jpg" alt="Карта" class="map-image"> <!-- Путь изменен -->
-            
-            <!-- Точки на карте -->
-            <div class="point" style="top: 55%; left: 55%;" data-info="Twins Garden"></div>
-            <div class="point" style="top: 97%; left: 40%;" data-info="Artest-Chef’s Table"></div>
-            <div class="point" style="top: 69%; left: 60%;" data-info="SAVVA"></div>
-            <div class="point" style="top: 72%; left: 41%;" data-info="Selfie"></div>
-            <div class="point" style="top: 95%; left: 40.56%;" data-info="White Rabbit"></div>
-            <div class="point" style="top: 95%; left: 39.56%;" data-info="Сахалин"></div>
-            <div class="point grand-cru" style="top: 61%; left: 46%;" data-info="Grand Cru"></div>
-            <div class="point" style="top: 74%; left: 56%;" data-info="Белуга"></div>
-        </div>
+        
+        <!-- Убираем контейнер для карты, просто привязываем карту к секции -->
+        <img src="static/images/map.jpg" alt="Карта" class="map-image">
+        
+        <!-- Точки на карте -->
+        <div class="point" style="top: 55%; left: 55%;" data-info="Twins Garden"></div>
+        <div class="point" style="top: 97%; left: 40%;" data-info="Artest-Chef’s Table"></div>
+        <div class="point" style="top: 69%; left: 60%;" data-info="SAVVA"></div>
+        <div class="point" style="top: 72%; left: 41%;" data-info="Selfie"></div>
+        <div class="point" style="top: 95%; left: 40.56%;" data-info="White Rabbit"></div>
+        <div class="point" style="top: 95%; left: 39.56%;" data-info="Сахалин"></div>
+        <div class="point grand-cru" style="top: 61%; left: 46%;" data-info="Grand Cru"></div>
+        <div class="point" style="top: 74%; left: 56%;" data-info="Белуга"></div>
+    
         <button id="btn-next-3">Французская, значит? Отлично!</button>
     </div>
 
@@ -370,6 +370,7 @@
  
 </body>
 </html>
+
 
 
 
