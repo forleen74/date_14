@@ -222,8 +222,8 @@ button:hover {
 .map-image {
     position: absolute;
     width: 600px;
-    height: 400px;
-    transform: translateX(2%);
+    height: 500px;
+    transform: translateX(-20%);
     display: block;
     margin: 0 auto; /* Центрирование по горизонтали */
 }
@@ -494,6 +494,7 @@ button:hover {
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
