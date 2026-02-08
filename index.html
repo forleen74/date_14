@@ -63,7 +63,7 @@
         <button id="btn-open-love-declaration">Прочитай меня &#9993;</button>
 
         <!-- Блок с признанием в любви, скрыт по умолчанию -->
-        <div id="love-declaration" class="hidden" style="text-align: left;" >
+        <div id="love-declaration" class="hidden" style="text-align: left;">
             <p>Вероника, милая, я безумно по тебе скучаю. Невозможно уместить в голове то, что еще несколько недель назад мы были вместе, а теперь не общаемся.
             Мне так же тяжело, как и тебе - ощущать оторванной большую часть себя. Каждое утро начинается с мысли "как же паршиво" - и эта мысль не покидает весь день...
             </p>
@@ -86,7 +86,6 @@
         <p>4: <a href="https://drive.google.com/file/d/1aRJyfHKvRr8cVkFgFRLl4LEANWcqrmW9/view?usp=drive_link" target="_blank" class="event-link"> Дневник памяти </a> </p>
         <p>5: <a href="https://drive.google.com/file/d/1Kv3yaWUT4aVbKw4f2bZo6M9bbYhzGfYW/view?usp=drive_link" target="_blank" class="event-link"> Элементарно </a> </p>
         <p>6: <a href="https://drive.google.com/file/d/10Z_cBHdkTI_97TegEjZQW1gCTQxL0uXv/view?usp=drive_link" target="_blank" class="event-link"> Посмотри в субтитры :) </a> </p>
-
         <button class="slider-nav" id="prev-video">←</button>
         <button class="slider-nav" id="next-video">→</button>
         <button id="btn-next-5">Это хорошие фильмы...</button>
@@ -163,7 +162,7 @@
         const btnNext4 = document.getElementById('btn-next-4');
         const btnNext5 = document.getElementById('btn-next-5');
         const btnNext6 = document.getElementById('btn-next-6');
-        // const btnNext7 = document.getElementById('btn-next-7');
+        const btnNext7 = document.getElementById('btn-next-7'); // Добавляем эту строку для btn-next-7
 
         // Функция для прокрутки к следующему блоку
         function scrollToNextSection(nextSectionButton) {
@@ -183,6 +182,7 @@
         btnNext5.onclick = function () { scrollToNextSection(btnNext5); };
         btnNext6.onclick = function () { scrollToNextSection(btnNext6); };
         btnNext7.onclick = function () { scrollToNextSection(btnNext7); };
+
         // Переменные для картинок
         const images = document.querySelectorAll('.slider-image');
         const prevImageButton = document.getElementById('prev-image');
@@ -368,25 +368,7 @@
         };
 
     });
-
-
-
-
-
-        </script>
+    </script>
  
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
