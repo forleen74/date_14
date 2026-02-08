@@ -289,7 +289,8 @@ button:hover {
     flex-direction: column;
     align-items: center;
     width: 90%;
-    margin-top: 0;  /* Убираем верхний отступ */
+    margin-top: 0;  
+    position: relative; /* Убираем верхний отступ */
 }
 
 /* Стили для текста в секции */
@@ -493,6 +494,7 @@ button:hover {
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
