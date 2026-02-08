@@ -290,6 +290,7 @@ button:hover {
     align-items: center;
     width: 90%;
     margin-top: 0;  
+    position: relative;
 }
 
 /* Стили для текста в секции */
@@ -493,6 +494,7 @@ button:hover {
         opacity: 0; /* Сердечко исчезает */
     }
 }
+
 
 
 
